@@ -18,13 +18,13 @@ export const Header = () => {
                 <button onClick={() => handleClick("Inicio", "/")} className={`nav-item ${selected === "Inicio" ? "bg-white text-gray-900" : ""}`}>
                     Inicio
                 </button>
-                <button onClick={() => handleClick("Proyectos", "/proyectos")} className={`nav-item ${selected === "Proyectos" ? "bg-white text-gray-900" : ""}`}>
+                <button onClick={() => handleClick("Proyectos", "/#Proyectos")} className={`nav-item ${selected === "Proyectos" ? "bg-white text-gray-900" : ""}`}>
                     Proyectos
                 </button>
                 <button onClick={() => handleClick("SobreMi", "/#SobreMi")} className={`nav-item ${selected === "SobreMi" ? "bg-white text-gray-900" : ""}`}>
                     Sobre mi
                 </button>
-                <button onClick={() => handleClick("Contacto", "/contacto")} className={`nav-item ${selected === "Contacto" ? "bg-white text-gray-900" : ""}`}>
+                <button onClick={() => handleClick("Contacto", "/#Contacto")} className={`nav-item ${selected === "Contacto" ? "bg-white text-gray-900" : ""}`}>
                     Contacto
                 </button>
             </nav>

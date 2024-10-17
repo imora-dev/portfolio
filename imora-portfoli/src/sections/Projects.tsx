@@ -6,7 +6,7 @@ import { SmartPhone } from "@/components/smartphone"
 export const ProjectsSection = () => {
 
     return (
-        <div className=" mt-20">
+        <div className=" mt-20" id="Proyectos">
             
             <SectionHeader
                 title="¡Proyectos que Transforman! 🚀✨"

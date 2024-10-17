@@ -6,7 +6,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export function SocialDock() {
     return (
-        <div className="relative">
+        <div className="relative" id="Contacto">
             <LetterPullup words={"Acá tenes mis redes sociales!!!"} delay={0.05} className="text-white text-2xl" />
             <Dock direction="middle">
                 <DockIcon className="transition-transform duration-300 hover:scale-125 ">
