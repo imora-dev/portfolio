@@ -8,14 +8,14 @@ import { FileTreeDemo } from "@/components/FileTree";
 
 export const AboutSection = () => {
     return (
-        <div className="py-20">
+        <div className="py-20" id="SobreMi">
             <SectionHeader
                 title="Una chusmiadita a mi mundo"
                 description="Acá podés ver las herramientas que uso a diario, los hábitos que me mantienen productivo y un poco sobre dónde vivo y cómo me organizo."
                 eyebrow="Sobre-mi" />
 
-            <div className=" mt-20 grid grid-cols-1 md:grid-cols-7 gap-8 mx-auto max-w-4xl">
-                <Card className="h-[420px] md:col-span-3">
+            <div className=" mt-20 grid grid-cols-1 md:grid-cols-7 gap-8 mx-auto max-w-4xl  ">
+                <Card className="h-[420px] md:col-span-3 m-6">
                     <div className="flex flex-col">
                         <div className="inline-flex items-center gap-2">
                             <StarIcon className="size-9 text-emerald-300" />
@@ -28,7 +28,7 @@ export const AboutSection = () => {
                     </div>
                 </Card>
 
-                <Card className="sm:mb-6 h-[320px] md:col-span-4">
+                <Card className="sm:mb-6 h-[320px] md:col-span-4 m-6">
                     <div className="flex flex-col mb-6">
                         <div className="inline-flex items-center gap-2">
                             <StarIcon className="size-9 text-emerald-300" />
@@ -48,8 +48,8 @@ export const AboutSection = () => {
 
             </div>
 
-            <div className="mt-8 md:mt-2 grid grid-cols-1 md:grid-cols-7 gap-8 mx-auto max-w-4xl">
-                <Card className="md:mt-1 h-[400px] md:col-span-3">
+            <div className="mt-8 md:mt-2 grid grid-cols-1 md:grid-cols-7 gap-8 mx-auto max-w-4xl ">
+                <Card className="md:mt-1 h-[400px] md:col-span-3 m-6">
                     <div className="flex flex-col">
                         <div className="inline-flex items-center gap-2">
                             <StarIcon className="size-9 text-emerald-300" />
@@ -62,7 +62,7 @@ export const AboutSection = () => {
                     </div>
                 </Card>
 
-                <Card className="md:-mt-24  h-[500px] md:col-span-4">
+                <Card className="md:-mt-24  h-[500px] md:col-span-4 m-6">
                     <div className="flex flex-col">
                         <div className="inline-flex items-center gap-2">
                             <StarIcon className="size-9 text-emerald-300" />

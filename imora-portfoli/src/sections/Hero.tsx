@@ -55,6 +55,9 @@ export const HeroSection = () => {
             </div>
             <div className="container mx-auto">
                 <div className='flex flex-col items-center '>
+                <h3 className='font-serif text-2xl md:text-2xl text-center mt-8 tracking-wide'>
+                        full-stack   developer
+                    </h3>
                     <Image src={DevImage} alt='imora programando'
                         className='w-[200px]' />
                     <div className='bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-xl'>
