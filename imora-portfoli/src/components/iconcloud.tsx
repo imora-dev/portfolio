@@ -27,7 +27,8 @@ const slugs = [
   "python",
   "apache",
   "nextdotjs",
-  "nextui"
+  "nextui",
+  "cplusplus"
 ]
 
 export function IconCloudDemo() {

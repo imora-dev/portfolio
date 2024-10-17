@@ -12,8 +12,8 @@ import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { FileIcon, FolderIcon, FolderOpenIcon } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-
-
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 type TreeViewElement = {
   id: string;
@@ -153,7 +153,11 @@ const Tree = forwardRef<HTMLDivElement, TreeViewProps>(
         }}
       >
         <div className={cn("size-full", className)}>
-          
+          <ScrollArea
+            ref={ref}
+            className="h-full relative px-2"
+            dir={dir as Direction}
+          >
             <AccordionPrimitive.Root
               {...props}
               type="multiple"
@@ -167,7 +171,7 @@ const Tree = forwardRef<HTMLDivElement, TreeViewProps>(
             >
               {children}
             </AccordionPrimitive.Root>
-        
+          </ScrollArea>
         </div>
       </TreeContext.Provider>
     );
@@ -365,10 +369,20 @@ const CollapseButton = forwardRef<
   }, [expandAll]);
 
   return (
-    <>
+    <Button
+      variant={"ghost"}
+      className="h-8 w-fit p-1 absolute bottom-1 right-2"
+      onClick={
+        expandedItems && expandedItems.length > 0
+          ? closeAll
+          : () => expendAllTree(elements)
+      }
+      ref={ref}
+      {...props}
+    >
       {children}
       <span className="sr-only">Toggle</span>
-   </>
+    </Button>
   );
 });
 
