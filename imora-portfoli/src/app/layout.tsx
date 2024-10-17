@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Inter , Calistoga } from 'next/font/google'
 //import localFont from "next/font/local";
+import localFont from "next/font/local"
 import "./globals.css";
 import {twMerge} from "tailwind-merge";
 
@@ -10,6 +11,12 @@ import {twMerge} from "tailwind-merge";
 //   variable: "--font-geist-sans",
 //   weight: "100 900",
 // });
+
+const futuraBold = localFont({
+    src: "./fonts/FuturaLT-Bold.woff",
+  variable: "--font-futura",
+ 
+});
 
 
 const inter = Inter({
@@ -35,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={twMerge(inter.variable,calistoga.variable,'bg-gray-900 text-white antialiased font-sans')}
+        className={twMerge(inter.variable,calistoga.variable,futuraBold.variable,'bg-gray-900 text-white antialiased font-sans')}
       >
         {children}
       </body>
