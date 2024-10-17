@@ -42,7 +42,7 @@ export const AboutSection = () => {
                         </span>
 
                         
-                    <RetroGrid className="dark -m-6 w-full " />
+                    <RetroGrid className="dark -ml-6 min-w-[1600px] " />
 
                 </Card>
 

@@ -33,7 +33,7 @@ const slugs = [
 
 export function IconCloudDemo() {
   return (
-    <div className="h-full z-20">
+    <div className="h-full  z-20">
       <IconCloud iconSlugs={slugs}  />
     </div>
   );

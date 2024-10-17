@@ -4,7 +4,7 @@ import { SectionHeader } from "./SectionHeader";
 
 export const EducationSection = () => {
     return (
-        <div className="mt-14">
+        <div className="mt-40">
         
             <SectionHeader
             
