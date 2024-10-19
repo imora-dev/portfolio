@@ -1,3 +1,5 @@
+"use client";
+
 import DevImage from '@/assets/images/imora.png'
 import { ArrowDown } from 'lucide-react'
 import Image from 'next/image'
@@ -5,8 +7,16 @@ import grainImage from "@/assets/images/grain.jpg"
 import StarIcon from '@/assets/icons/star.svg'
 import SparkleIcon from '@/assets/icons/sparkle.svg'
 import { HeroOrbit } from '@/components/HeroOrbit'
+import { Hanalei } from 'next/font/google'
+import { useRouter } from "next/navigation";
 
 export const HeroSection = () => {
+    const router = useRouter();
+    const handleCklic = (route: string) => {
+        router.push(route);
+
+    }
+
     return (
 
         <div className='py-20 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
@@ -55,7 +65,7 @@ export const HeroSection = () => {
             </div>
             <div className="container mx-auto">
                 <div className='flex flex-col items-center '>
-                <h3 className='font-serif text-2xl md:text-2xl text-center mt-8 tracking-wide'>
+                    <h3 className='font-serif text-2xl md:text-2xl text-center mt-8 tracking-wide'>
                         full-stack   developer
                     </h3>
                     <Image src={DevImage} alt='imora programando'
@@ -77,11 +87,11 @@ export const HeroSection = () => {
                     </p>
                 </div>
                 <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
-                    <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
-                        <span>Explora Mi Trabajo</span>
+                    <a target='_blank' href='https://drive.google.com/file/d/17Ko1BjliybTcQJ1EZ2NUChWnKdviELvO/view?usp=drive_link' className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-50'>
+                        <span>Mi resumen</span>
                         <ArrowDown className='size-4' />
-                    </button>
-                    <button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl'>
+                    </a>
+                    <button onClick={() => handleCklic("/#Contacto")} className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-50'>
                         <span>👋</span>
                         <span className='font-semibold'>¡Conectemos!</span>
                     </button>
