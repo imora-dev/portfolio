@@ -1,10 +1,9 @@
-import { SmartPhone } from "./smartphone";
+export const FulbopagoCard =()=>{
 
-export const ProjectCard = () => {
-    return (
-        <div className="flex justify-center  flex-col md:flex-row  items-center space-x-8 mx-auto mt-20"> {/* Flexbox container */}
-            {/* Card */}
-            <div className="card w-80 h-auto bg-gray-700/60 rounded-2xl overflow-hidden relative transition-all duration-300 hover:shadow-[0_0_30px_rgba(1,191,97,0.5)]">
+return(
+<div>
+  {/* Card */}
+  <div className="card w-80 h-auto bg-gray-700/60 rounded-2xl overflow-hidden relative transition-all duration-300 hover:shadow-[0_0_30px_rgba(1,191,97,0.5)]">
                 <div className="card-content p-4 relative z-10">
                     <div className="flex items-center mb-4">
                         <div>
@@ -72,8 +71,7 @@ export const ProjectCard = () => {
                 </div>
             </div>
 
-            {/* SmartPhone component */}
-            <SmartPhone />
-        </div>
-    );
-};
+</div>
+);
+
+}
