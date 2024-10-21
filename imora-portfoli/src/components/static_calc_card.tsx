@@ -36,7 +36,7 @@ export const StaticCalcCard = () => {
                                         "Resolucion del problema fisico",
                                         "programar el metodo de resolucion matricial",
                                         "programar salida de datos en excel",
-                                        "progrmar graficos",
+                                        "programar graficos",
                                         
                                     ].map((task) => (
                                         <li key={task} className="flex items-center">
