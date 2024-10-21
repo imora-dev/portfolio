@@ -18,7 +18,7 @@ return(
                         <h3 className="text-xs font-semibold text-white/80 mb-2"></h3>
                         <div className="flex flex-wrap -mx-1">
                             {/* Skill tags */}
-                            {["Serverless", "React", "mongo db", "tailwind", "Uber h3", "Next iu", "OpenStreetMap"].map((skill) => (
+                            {["AWS","Serverless", "React", "mongo db", "tailwind", "Uber h3", "Next iu", "OpenStreetMap"].map((skill) => (
                                 <div
                                     key={skill}
                                     className="px-2 py-1 m-0.5 bg-white/10 rounded-full text-xs font-medium text-white/70 shadow-sm border border-white/20 transition-all duration-300 hover:bg-white/20"
