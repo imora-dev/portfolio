@@ -9,6 +9,7 @@ import SparkleIcon from '@/assets/icons/sparkle.svg'
 import { HeroOrbit } from '@/components/HeroOrbit'
 import { Hanalei } from 'next/font/google'
 import { useRouter } from "next/navigation";
+import { SocialDock } from '@/components/SocialMediaDock';
 
 export const HeroSection = () => {
     const router = useRouter();
@@ -19,7 +20,7 @@ export const HeroSection = () => {
 
     return (
 
-        <div className='py-20 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
+        <div className='py-10 md:py-28 lg:py-20 relative z-0 overflow-x-clip'>
             <div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]'>
                 <div className='absolute inset-0 -z-30 opacity-5'
                     style={{ backgroundImage: `url(${grainImage.src})` }}
@@ -87,14 +88,15 @@ export const HeroSection = () => {
                     </p>
                 </div>
                 <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
-                    <a target='_blank' href='https://drive.google.com/file/d/17Ko1BjliybTcQJ1EZ2NUChWnKdviELvO/view?usp=drive_link' className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-50'>
+                    {/* <a target='_blank' href='https://drive.google.com/file/d/17Ko1BjliybTcQJ1EZ2NUChWnKdviELvO/view?usp=drive_link' className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-50'>
                         <span>Mi resumen</span>
                         <ArrowDown className='size-4' />
-                    </a>
-                    <button onClick={() => handleCklic("/#Contacto")} className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-50'>
+                    </a> */}
+                    {/* <button onClick={() => handleCklic("/#Contacto")} className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-50'>
                         <span>👋</span>
                         <span className='font-semibold'>¡Conectemos!</span>
-                    </button>
+                    </button> */}
+                    <SocialDock></SocialDock>
                 </div>
             </div>
         </div>

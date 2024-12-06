@@ -14,21 +14,17 @@ export function SocialDock() {
                         <Icons.gitHub className="size-6" />
                     </a>
                 </DockIcon>
-                {/* <DockIcon className="transition-transform duration-300 hover:scale-125 ">
-                    <a target="_blank" href="https://www.instagram.com/imora.dev/profilecard/?igsh=bHg0bHVyemlrZDY3">
+                <DockIcon className="transition-transform duration-300 hover:scale-125 ">
+                    <a target="_blank" href="https://www.instagram.com/ivan.elterrible.01">
                         <Icons.instagam className=" size-6" />
                     </a>
-                </DockIcon> */}
+                </DockIcon>
                 <DockIcon className="transition-transform duration-300 hover:scale-125 ">
                     <a target="_blank" href="https://www.linkedin.com/in/imora-dev">
                         <Icons.linkedin className=" size-6" />
                     </a>
                 </DockIcon>
-                <DockIcon className="transition-transform duration-300 hover:scale-125 ">
-                    <a target="_blank" href="mailto:imoraaa762@gmail.com">
-                        <Icons.gmail className="size-6" />
-                    </a>
-                </DockIcon>
+                
             </Dock>
         </div>
     );
